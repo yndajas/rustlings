@@ -12,6 +12,13 @@
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
 
+fn calculate_price_of_apples(quantity: i8) -> i8 {
+    match quantity {
+        0..=40 => quantity * 2,
+        _ => quantity,
+    }
+}
+
 fn main() {
     // You can optionally experiment here.
 }
